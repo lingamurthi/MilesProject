@@ -1,0 +1,390 @@
+<!-- Linga -->
+<main-body
+  class="main"
+  id="blur"
+  [ngClass]="{
+    containerabc: showModal,
+    transperent: arrow
+  }"
+>
+  <div class="flex-container fontstyle">
+    <div class="card">
+      <h3 id="headername">Formalities</h3>
+
+      <img
+        class="ellipse1"
+        src="./assets/images/Ellipse 382.png"
+        alt="aa"
+        width="70px"
+        height="50px"
+      />
+      <img
+        class="ellipse2"
+        src="./assets/images/Ellipse 383.png"
+        alt="bb"
+        width="30px"
+        height="50px"
+      />
+
+      <div class="info">
+        <img
+          class="hover"
+          *ngIf="anytextmiles"
+          src="./assets/images/Frame 33215.png"
+          alt="ttt"
+        />
+
+        <div class="abc">
+          <input
+            type="radio"
+            name="text"
+            style="width: 13px; height: 11px"
+          />Enrolled for Bridge Course
+          <br />
+          <input
+            type="radio"
+            name="text"
+            style="width: 13px; height: 11px"
+          /><span>Evaluation Report Received</span>
+          <br />
+          <input
+            type="radio"
+            name="text"
+            style="width: 13px; height: 11px"
+          /><span>NTS Received</span>
+        </div>
+      </div>
+
+      <img class="path" src="./assets/images/Group 33245.png" alt="abc" />
+
+      <img
+        (mouseover)="anytextmiles = true"
+        (mouseout)="anytextmiles = false"
+        class="milestone1"
+        src="./assets/images/Group 33771.svg"
+        alt="ttt"
+      />
+      <img class="milestone1a" src="./assets/images/Line 5.png" alt="tttt" />
+    </div>
+
+    <div class="card11">
+      <img
+        (mouseover)="anytextmilesone = true"
+        (mouseout)="anytextmilesone = false"
+        class="milestone2"
+        src="./assets/images/Group 33776.png"
+        alt="jjj"
+      />
+
+      <img class="milestone2a" src="./assets/images/Line 5.png" alt="ff" />
+
+      <div class="checkbox1">
+        <img
+          *ngIf="anytextmilesone"
+          class="hover1"
+          src="./assets/images/Frame 33215.png"
+          alt="jjj"
+        />
+        <p><input type="checkbox" (click)="checkone($event)" />Cram Mode</p>
+        <span *ngIf="checkedone">
+          <img class="highlight" src="./assets/images/Vector.png" alt="ll" />
+        </span>
+
+        <img
+          (mouseover)="anytext = true"
+          (mouseout)="anytext = false"
+          src="./assets/images/auditing.png"
+          alt="Avatar"
+          style="display: block; margin: auto"
+        />
+
+        <img
+          *ngIf="anytext"
+          class="hoveronimage"
+          src="./assets/images/Frame 2010.png"
+          alt="kk"
+        />
+
+        <h4 id="info" style="text-align: center">Auditing</h4>
+        <p class="completed">Completed</p>
+
+        <p class="timing">12 Months Remaining</p>
+
+        <div class="grid-container2">
+          <img class="p" src="./assets/images/Group 33781.png" alt="aaa" />
+          <p id="pqr">Dec 2022</p>
+          <img class="pp" src="./assets/images/Group 33128.png" alt="ccc" />
+        </div>
+
+        <div class="grid-container1">
+          <div class="grid-item1">Videos</div>
+          <div class="grid-item1">SIMs</div>
+          <div class="grid-item1">MCQs</div>
+        </div>
+        <div class="grid-container">
+          <span class="grid-item"
+            ><img
+              class="a"
+              src="./assets/images/Group 33129.png"
+              alt="rr"
+            /><span>{{ data.videos }}</span></span
+          >
+          <span class="grid-item"
+            ><img
+              class="b"
+              src="./assets/images/Group 33129.png"
+              alt="rr"
+            /><span class="d">{{ data.sims }}</span></span
+          >
+          <span class="grid-item"
+            ><img
+              class="c"
+              src="./assets/images/Group 33129 (1).png"
+              alt="rr"
+            /><span class="e">{{ data.mcqs }}</span></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="card22">
+      <img
+        (mouseover)="anytextmilestwo = true"
+        (mouseout)="anytextmilestwo = false"
+        class="milestone3"
+        src="./assets/images/Group 33777 (1).png"
+        alt=""
+      />
+
+      <img class="milestone3a" src="./assets/images/Line 5.png" alt="" />
+
+      <div class="card2inside">
+        <img
+          *ngIf="anytextmilestwo"
+          class="hover2"
+          src="./assets/images/Frame 33215.png"
+          alt=""
+        />
+
+        <p><input type="checkbox" (click)="checktwo($event)" />Cram Mode</p>
+
+        <span *ngIf="checkedtwo">
+          <img class="highlight" src="./assets/images/Vector.png" alt="" />
+        </span>
+        <img
+          (mouseover)="anytext2 = true"
+          (mouseout)="anytext2 = false"
+          src="./assets/images/finance.png"
+          alt="Avatar"
+          style="display: block; margin: auto"
+        />
+
+        <img
+          class="hovereffect2"
+          *ngIf="anytext2"
+          class="hovereffect2image"
+          src="./assets/images/Frame 2019.png"
+          alt=""
+        />
+
+        <h4 id="info" style="text-align: center">Finances</h4>
+        <p class="completed2">Completed</p>
+
+        <p class="timing2">12 Months Remaining</p>
+        <div class="grid-container2">
+          <img class="p" src="./assets/images/Group 33782.png" alt="" />
+          <p id="pqr" style="color: #daaa1b">Dec 2022</p>
+          <img class="pp" src="./assets/images/Group 33128.png" alt="" />
+        </div>
+
+        <div class="grid-container1">
+          <div class="grid-item1">Videos</div>
+          <div class="grid-item1">SIMs</div>
+          <div class="grid-item1">MCQs</div>
+        </div>
+        <div class="grid-container">
+          <span class="grid-item"
+            ><img
+              class="a"
+              src="./assets/images/Group 33129.png"
+              alt="rr"
+            /><span>{{ data.videos }}</span></span
+          >
+          <span class="grid-item"
+            ><img
+              class="b"
+              src="./assets/images/Group 33129.png"
+              alt="rr"
+            /><span class="d">{{ data.sims }}</span></span
+          >
+          <span class="grid-item"
+            ><img
+              class="c"
+              src="./assets/images/Group 33129 (1).png"
+              alt="rr"
+            /><span class="e">{{ data.mcqs }}</span></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="card33">
+      <img
+        (mouseover)="anytextmilesthree = true"
+        (mouseout)="anytextmilesthree = false"
+        class="milestone4"
+        src="./assets/images/Group 33766.png"
+        alt="tt"
+      />
+      <img class="milestone4a" src="./assets/images/Line 5.png" alt="" />
+
+      <div class="checkbox3">
+        <img
+          *ngIf="anytextmilesthree"
+          class="hovereffect3"
+          src="./assets/images/Frame 33215.png"
+          alt="yy"
+        />
+        <p><input type="checkbox" (click)="checkthree($event)" />Cram Mode</p>
+        <span *ngIf="checkedthree">
+          <img class="highlight" src="./assets/images/Vector.png" alt="" />
+        </span>
+        <img
+          (mouseover)="anytext3 = true"
+          (mouseout)="anytext3 = false"
+          src="./assets/images/business.png"
+          alt="Avatar"
+          style="display: block; margin: auto"
+        />
+
+        <img
+          class="hovereffect3image"
+          *ngIf="anytext3"
+          class="hovereffect3image3"
+          src="./assets/images/Frame 2012.png"
+          alt=""
+        />
+
+        <h4 id="info" class="business">Business</h4>
+        <p class="completed3">Completed</p>
+
+        <p class="timing3">12 Months Remaining</p>
+        <div class="grid-container2">
+          <img class="p" src="./assets/images/Group 33134.png" alt="" />
+          <p id="pqr" style="color: #1691d3">Dec 2022</p>
+          <img class="pp" src="./assets/images/Group 33128.png" alt="" />
+        </div>
+
+        <div class="grid-container1">
+          <div class="grid-item1">Videos</div>
+          <div class="grid-item1">SIMs</div>
+          <div class="grid-item1">MCQs</div>
+        </div>
+
+        <div class="grid-container">
+          <span class="grid-item"
+            ><img
+              class="a"
+              src="./assets/images/Group 33129.png"
+              alt="rr"
+            /><span>{{ data.videos }}</span></span
+          >
+          <span class="grid-item"
+            ><img
+              class="b"
+              src="./assets/images/Group 33129.png"
+              alt="rr"
+            /><span class="d">{{ data.sims }}</span></span
+          >
+          <span class="grid-item"
+            ><img
+              class="c"
+              src="./assets/images/Group 33129 (1).png"
+              alt="rr"
+            /><span class="e">{{ data.mcqs }}</span></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="card44">
+      <img
+        (mouseover)="anytextmilesfour = true"
+        (mouseout)="anytextmilesfour = false"
+        class="milestone5"
+        src="./assets/images/Group 33774.svg"
+        alt=""
+      />
+      <img class="milestone5a" src="./assets/images/Line 5.png" alt="" />
+
+      <div class="card4info">
+        <img
+          *ngIf="anytextmilesfour"
+          class="hovereffect4"
+          src="./assets/images/Frame 33215.png"
+          alt=""
+        />
+
+        <p><input type="checkbox" (click)="checkfour($event)" />Cram Mode</p>
+        <span *ngIf="checkedfour">
+          <img class="highlight" src="./assets/images/Vector.png" alt="" />
+        </span>
+        <img
+          (mouseover)="anytext4 = true"
+          (mouseout)="anytext4 = false"
+          src="./assets/images/regulation.png"
+          alt="Avatar"
+          style="display: block; margin: auto"
+        />
+
+        <img
+          *ngIf="anytext4"
+          class="hovereffect4one"
+          class="hovereffect4oneimage"
+          src="./assets/images/Frame 2013.png"
+          alt=""
+        />
+
+        <h4 class="card4infoone">Regulation</h4>
+        <p class="completed4">Completed</p>
+
+        <p class="timing4">12 Months Remaining</p>
+        <div class="grid-container2">
+          <img class="p" src="./assets/images/Group 33783.png" alt="" />
+          <p id="pqr" style="color: #c42026">Dec 2022</p>
+          <img class="pp" src="./assets/images/Group 33128.png" alt="" />
+        </div>
+
+        <div class="grid-container1">
+          <div class="grid-item1">Videos</div>
+          <div class="grid-item1">SIMs</div>
+          <div class="grid-item1">MCQs</div>
+        </div>
+
+        <div class="grid-container">
+          <span class="grid-item"
+            ><img
+              class="a"
+              src="./assets/images/Group 33129.png"
+              alt="rr"
+            /><span>{{ data.videos }}</span></span
+          >
+          <span class="grid-item"
+            ><img
+              class="b"
+              src="./assets/images/Group 33129.png"
+              alt="rr"
+            /><span class="d">{{ data.sims }}</span></span
+          >
+          <span class="grid-item"
+            ><img
+              class="c"
+              src="./assets/images/Group 33129 (1).png"
+              alt="rr"
+            /><span class="e">{{ data.mcqs }}</span></span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</main-body>
